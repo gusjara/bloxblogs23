@@ -1,0 +1,84 @@
+entityName: 'Post'
+entity: 'Blog\BlogBundle\Entity\Post'
+repository: 'BlogBundle:Post'
+index: 'admin_post'
+new: 'admin_post_new'
+edit: 'admin_post_edit'
+show: 'admin_post_show'
+create: 'admin_post_create'
+update: 'admin_post_update'
+delete: 'admin_post_delete'
+export: 'admin_post_export'
+sessionFilter: 'PostControllerFilter'
+fieldsindex:    
+    a.id:
+        label: 'Id'
+        name: 'Id'
+        type: 'integer'
+        export: true    
+    a.titulo:
+        label: 'Titulo'
+        name: 'Titulo'
+        type: 'string'
+        export: true    
+    a.cuerpo:
+        label: 'Cuerpo'
+        name: 'Cuerpo'
+        type: 'text'
+        export: true    
+    a.estado:
+        label: 'Estado'
+        name: 'Estado'
+        type: 'boolean'
+        export: true    
+    a.creado:
+        label: 'Creado'
+        name: 'Creado'
+        type: 'datetime'
+        date: 'Y-m-d H:i:s'
+        export: true    
+    a.editado:
+        label: 'Editado'
+        name: 'Editado'
+        type: 'datetime'
+        date: 'Y-m-d H:i:s'
+        export: true
+    a.categoria:
+        label: 'Categoria'
+        name: 'Categoria'
+        type: 'MANY_TO_ONE'
+fieldsshow:
+    a.id:
+        label: 'Id'
+        name: 'Id'
+        type: 'integer'
+    a.titulo:
+        label: 'Titulo'
+        name: 'Titulo'
+        type: 'string'
+    a.cuerpo:
+        label: 'Cuerpo'
+        name: 'Cuerpo'
+        type: 'text'
+    a.estado:
+        label: 'Estado'
+        name: 'Estado'
+        type: 'boolean'
+    a.creado:
+        label: 'Creado'
+        name: 'Creado'
+        type: 'datetime'
+        date: 'Y-m-d H:i:s'
+    a.editado:
+        label: 'Editado'
+        name: 'Editado'
+        type: 'datetime'
+        date: 'Y-m-d H:i:s'
+    a.categoria:
+        label: 'Categoria'
+        name: 'Categoria'
+        type: 'MANY_TO_ONE'
+    a.tags:
+        label: 'Tags'
+        name: 'Tags'
+        type: 'MANY_TO_MANY'
